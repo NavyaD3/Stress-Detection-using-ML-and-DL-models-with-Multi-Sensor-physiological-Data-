@@ -1,0 +1,17 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+{% block title %}Existing Model - MySite{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>📊 Proposed Model Results</h2>
+  <p>This section displays the results/visualizations from your <strong>Proposed notebook</strong>.</p>
+
+  <!-- Option 1: Embed exported notebook as iframe -->
+  <iframe src="{% static 'notebooks/Proposed.html' %}" 
+          style="width:100%; height:90vh; border:none;"></iframe>
+
+  <!-- Option 2: Or just show placeholder -->
+  <!-- <p>You can upload or render the notebook output here.</p> -->
+</div>
+{% endblock %}
